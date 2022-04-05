@@ -1,5 +1,4 @@
 const express = require('express')
-const { create } = require('../models/records')
 const router = express.Router()
 const Records = require('../models/records')
 
@@ -37,3 +36,5 @@ router.get('/:id', (req, res) => {
         res.json(foundRecord)
     })
 })
+
+module.exports = router
